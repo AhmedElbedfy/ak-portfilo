@@ -1,3 +1,10 @@
+
+/*
+
+    Animation with GSAP
+
+*/
+
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
 

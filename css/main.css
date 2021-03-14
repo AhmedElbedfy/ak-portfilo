@@ -306,6 +306,9 @@ footer .copyright p {
     max-height: 35vh;
     width: 100%;
     text-align: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   footer .content {
     display: -ms-grid;
@@ -330,11 +333,11 @@ footer .copyright p {
     font-size: 0.6em;
   }
   footer .footer-shape {
+    margin-top: -50px;
     display: unset;
-    margin-top: -11%;
     width: 100%;
-    height: 113%;
-    overflow: inherit;
+    height: 300px;
+    overflow: hidden;
   }
 }
 
@@ -407,8 +410,17 @@ footer .copyright p {
     float: right;
     max-width: 500px;
   }
+  footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   footer .content {
     padding-left: 4em;
+  }
+  footer .footer-shape {
+    width: 100%;
+    height: 300px;
   }
 }
 
@@ -425,6 +437,9 @@ footer .copyright p {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
+  footer .content {
+    padding-left: 10em;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -439,6 +454,12 @@ footer .copyright p {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+  footer .content {
+    padding-left: 20em;
+  }
+  footer .footer-shape {
+    overflow: hidden;
   }
 }
 
